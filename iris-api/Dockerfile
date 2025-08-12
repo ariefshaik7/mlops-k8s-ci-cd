@@ -2,13 +2,13 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY mlops-app/app/requirements.txt .
+COPY iris-api/app/requirements.txt .
 
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-COPY mlops-app/app ./app
-COPY mlops-app/model ./model
+COPY iris-api/app ./app
+COPY iris-api/model ./model
 
 EXPOSE 8000
 
