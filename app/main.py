@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 app = FastAPI()
-model = joblib.load("../model/model.pkl")
+model = joblib.load("model/model.pkl")
 
 class IrisSpeciesInput(BaseModel):
     Id: int
