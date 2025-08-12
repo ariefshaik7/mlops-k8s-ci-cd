@@ -3,4 +3,4 @@
 image:
   repository: ariefshaik007/iris-api
   pullPolicy: IfNotPresent
-  tag: '16904119134'
+  tag: '16904686652'
