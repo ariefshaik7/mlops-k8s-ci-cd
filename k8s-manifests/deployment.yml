@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlops-app
+  labels:
+    app: mlops-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mlops-app
+  template:
+    metadata:
+      labels:
+        app: mlops-app
+    spec:
+      containers:
+      - name: mlops-app
+        image: ariefshaik007/iris-mlops:v1
+        ports:
+        - containerPort: 8000

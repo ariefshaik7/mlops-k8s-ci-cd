@@ -2,8 +2,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import numpy as np
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
+
+Instrumentator().instrument(app).expose(app)
+
 model = joblib.load("model/model.pkl")
 
 class IrisSpeciesInput(BaseModel):

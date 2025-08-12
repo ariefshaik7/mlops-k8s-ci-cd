@@ -1,0 +1,6 @@
+
+
+image:
+  repository: ariefshaik007/flask-app
+  pullPolicy: IfNotPresent
+  tag: 'v1'

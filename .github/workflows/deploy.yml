@@ -1,0 +1,13 @@
+name: CI-CD
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+      - 'helm/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
