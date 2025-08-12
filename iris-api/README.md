@@ -185,5 +185,11 @@ The API provides the following endpoints:
             "PetalWidthCm": 0.2
           }'
     ```
-    
-
+  
+---
+![fastapi](/assets/images/fastapi.png)
+---
+![fastapi](/assets/images/fastapi-input.png)
+---
+![fastapi](/assets/images/fastapi-output.png)
+---

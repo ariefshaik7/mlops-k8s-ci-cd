@@ -6,6 +6,8 @@ on:
       - master
     paths-ignore:
       - 'README.md'
+      - 'monitoring/README.md'
+      - 'iris-api/README.md'
       - 'helm/**'
 
 jobs:
