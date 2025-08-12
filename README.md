@@ -41,6 +41,8 @@ mlops-k8s-ci-cd/
 │   ├── notebooks/          # Jupyter notebook for model training
 │   └── Dockerfile          # Instructions to build the application's Docker image
 ├── monitoring/             # Manifests and guide for setting up the monitoring stack
+|   ├── grafana
+|   |   └── grafana-dashboard.json  # Pre-built Grafana dashboard definition file
 │   ├── grafana-ingress.yaml
 │   ├── prometheus-ingress.yaml
 │   ├── README.md           # Detailed guide for setting up monitoring
