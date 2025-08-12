@@ -1,6 +1,6 @@
 
 
 image:
-  repository: ariefshaik007/flask-app
+  repository: ariefshaik007/iris-api
   pullPolicy: IfNotPresent
   tag: '16904119134'

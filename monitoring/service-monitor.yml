@@ -1,14 +1,14 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: mlops-app-monitor
+  name: iris-api-monitor
   namespace: monitoring
   labels:
     release: monitoring
 spec:
   selector:
     matchLabels:
-      app: mlops-app
+      app: iris-api
   namespaceSelector:
     matchNames:
       - default
