@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mlops-app
-        image: ariefshaik007/iris-mlops:{{ .Values.image.tag }}
+        image: ariefshaik007/mlops-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8000
