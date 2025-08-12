@@ -3,11 +3,14 @@ kind: Service
 metadata:
   name: mlops-app
   namespace: default
+  labels:                 
+    app: mlops-app
 spec:
   selector:
     app: mlops-app
   type: NodePort
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 8000
       targetPort: 8000
