@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./Dockerfile
+          file: ./mlops-app/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/mlops-app:${{ github.run_id }}
 
