@@ -258,3 +258,39 @@ You should now see a dashboard visualizing the live metrics from your Iris API! 
 ---
 ![grafana-fastapi-dashboard](/assets/images/grafana-dashboard.png)
 ---
+
+
+## Importing the Grafana Dashboard
+
+This project includes a pre-built Grafana dashboard definition file (`grafana-dashboard.json`) to save you time. Follow these steps to import and use it.
+
+### Step 1: Access the Grafana UI
+
+Log in to your Grafana instance, which should be accessible at `http://grafana.example.com` (if you set up Ingress) or via `port-forwarding`.
+
+### Step 2: Navigate to the Import Menu
+
+1. In the left-hand menu, go to **Dashboards**.
+    
+2. On the Dashboards page, click the **\+ New** button and select **Import**.
+    
+
+### Step 3: Upload the Dashboard JSON
+
+You will see the "Import dashboard" screen.
+
+1. Click the **Upload JSON file** button.
+    
+2. Navigate to the project directory on your local machine and select the `grafana/grafana-dashboard.json` file.
+    
+
+### Step 4: Configure and Import
+
+1. After uploading, Grafana will show you the dashboard options.
+    
+2. **Crucially**, you must select your Prometheus data source from the dropdown menu at the bottom of the page.
+    
+3. Click the **Import** button.
+    
+
+The "FastAPI Observability" dashboard will now load with all its panels, and you can start monitoring your application's metrics immediately.

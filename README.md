@@ -202,6 +202,7 @@ From now on, every time the GitHub Actions pipeline updates the image tag in `va
 
 The application is instrumented to expose performance metrics. You can set up a complete Prometheus and Grafana stack to visualize these metrics.
 
+The repository includes a pre-configured Grafana dashboard definition at grafana/grafana-dashboard.json that can be imported directly.
 For a complete, step-by-step guide, please see the **[Monitoring README](/monitoring/READme.md)**.
 
 -----
