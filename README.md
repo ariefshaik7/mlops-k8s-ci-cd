@@ -151,6 +151,10 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```bash
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 ```
+Kubectl port-forwarding can also be used to connect to the API server without exposing the service:
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
 
 You can now access the Argo CD UI at `https://localhost:8080`. Log in with username `admin` and the password from the previous step.
 
